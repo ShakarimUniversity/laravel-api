@@ -124,9 +124,11 @@ class UserController extends Controller
     /**
      * @OA\Put(
      *     path="/api/users/{id}",
-     *     summary="Update users data",
+     *     operationId="updateUserById",
      *     security={{"bearerAuth":{}}},
      *     tags={"user"},
+     *     summary="Update users data",
+     *     description="Update user data",
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

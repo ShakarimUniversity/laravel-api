@@ -252,7 +252,8 @@
                     "user"
                 ],
                 "summary": "Update users data",
-                "operationId": "b9091397c8b25f12c6adb74be6ce3a5a",
+                "description": "Update user data",
+                "operationId": "updateUserById",
                 "parameters": [
                     {
                         "name": "id",
