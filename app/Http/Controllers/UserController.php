@@ -24,6 +24,11 @@ class UserController extends Controller
      *     @OA\Response(
      *         response=400,
      *         description="Invalid"
+     *     ),
+     *     @OA\Response(
+     *         response=500,
+     *         description="Server error",
+     *         @OA\JsonContent()
      *     )
      * )
      */

@@ -12,7 +12,13 @@ use Illuminate\Routing\Controller as BaseController;
  * title="Swagger with Laravel",
  * version="1.0.0",
  * )
-
+ *
+ *  @OA\Header(
+ *         header="Accept",
+ *         description="Accept header",
+ *         @OA\Schema(type="string", default="application/json")
+ * )
+ *
  * @OA\SecurityScheme(
  * type="http",
  * securityScheme="bearerAuth",

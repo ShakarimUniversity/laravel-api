@@ -56,7 +56,7 @@
                 "tags": [
                     "login"
                 ],
-                "summary": "Authenticate user and generate JWT token",
+                "summary": "Authenticate user and generate token",
                 "operationId": "c5e838284c7f343f0e5e5fd589161c96",
                 "parameters": [
                     {
@@ -101,6 +101,14 @@
                     },
                     "400": {
                         "description": "Invalid"
+                    },
+                    "500": {
+                        "description": "Server error",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
                     }
                 },
                 "security": [
@@ -314,6 +322,15 @@
         }
     },
     "components": {
+        "headers": {
+            "Accept": {
+                "description": "Accept header",
+                "schema": {
+                    "type": "string",
+                    "default": "application/json"
+                }
+            }
+        },
         "securitySchemes": {
             "bearerAuth": {
                 "type": "http",
