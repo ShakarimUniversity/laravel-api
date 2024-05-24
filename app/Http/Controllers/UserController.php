@@ -88,6 +88,7 @@ class UserController extends Controller
      * @OA\Get(
      *     path="/api/users/{id}",
      *     operationId="getUserById",
+     *     security={{"bearerAuth":{}}},
      *     tags={"user"},
      *     summary="Get user information by ID",
      *     description="Returns user data",
