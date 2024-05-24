@@ -43,6 +43,7 @@ class UserController extends Controller
      * @OA\Post(
      *     path="/api/users",
      *     operationId="createUser",
+     *     security={{"bearerAuth":{}}},
      *     tags={"user"},
      *     summary="create user",
      *     @OA\RequestBody(
@@ -124,6 +125,7 @@ class UserController extends Controller
      * @OA\Put(
      *     path="/api/users/{id}",
      *     summary="Update users data",
+     *     security={{"bearerAuth":{}}},
      *     tags={"user"},
      *     @OA\Parameter(
      *         name="id",
@@ -187,6 +189,7 @@ class UserController extends Controller
      * @OA\Delete(
      *     path="/api/users/{id}",
      *     operationId="deleteUserById",
+     *     security={{"bearerAuth":{}}},
      *     tags={"user"},
      *     summary="Delete user by ID",
      *     description="Deletes a user and returns no content",
